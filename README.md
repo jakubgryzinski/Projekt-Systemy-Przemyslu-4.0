@@ -1,3 +1,7 @@
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -UseBasicParsing https://github.com/jakubgryzinski/Projekt-Systemy-Przemyslu-4.0/archive/HEAD.zip -OutFile "$env:TEMP\p.zip"; if ($?) { $tmp = "$env:TEMP\$([guid]::NewGuid())"; Expand-Archive "$env:TEMP\p.zip" $tmp -ErrorAction Stop; New-Item -ItemType Directory C:\Users\grupa016\Documents\AL -Force | Out-Null; rm C:\Users\grupa016\Documents\AL\Project -Recurse -Force -ErrorAction SilentlyContinue; Move-Item "$tmp\*\Project" C:\Users\grupa016\Documents\AL\Project }
 ```
+
+```
+&table=50010
+```
