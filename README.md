@@ -1,3 +1,3 @@
 ```powershell
-Invoke-WebRequest https://github.com/jakubgryzinski/Projekt-Systemy-Przemyslu-4.0/archive/HEAD.zip -OutFile "$env:TEMP\p.zip"; rm C:\Users\grupa016\Documents\AL\Project -Recurse -Force; tar -xf "$env:TEMP\p.zip" -C C:\Users\grupa016\Documents\AL --strip-components=1 "*/Project/*"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -UseBasicParsing https://github.com/jakubgryzinski/Projekt-Systemy-Przemyslu-4.0/archive/HEAD.zip -OutFile "$env:TEMP\p.zip"; if ($?) { rm C:\Users\grupa016\Documents\AL\Project -Recurse -Force -ErrorAction SilentlyContinue; tar -xf "$env:TEMP\p.zip" -C C:\Users\grupa016\Documents\AL --strip-components=1 "*/Project/*" }
 ```
