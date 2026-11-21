@@ -1,0 +1,40 @@
+{
+  "id": "8cc34a75-b529-43ee-820f-7e47b1c96311",
+  "name": "grupa016-projekt",
+  "publisher": "Michał Kańduła 162366, Jakub Gryziński 162236",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "a41facb4-aa1f-4f4b-a6d5-a574d9a33911",
+      "publisher": "IT.integro sp. z o.o.",
+      "name": "Polish Functionality - Starter Pack",
+      "version": "1.0.1.150"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50100
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "8.0",
+  "features": [
+    "NoImplicitWith"
+  ],
+  "target": "OnPrem"
+}

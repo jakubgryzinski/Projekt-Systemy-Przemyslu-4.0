@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "grupa016-projekt",
+            "request": "launch",
+            "type": "al",
+            "server": "http://150.254.30.81/",
+            "port": 7049,
+            "serverInstance": "grupa016",
+            "authentication": "Windows",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+        }
+    ]
+}
